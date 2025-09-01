@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "ts-node src/server.ts",
-    "docker:build": "docker compose -f docker-compose.prod.yml build",
-    "docker:up": "docker compose -f docker-compose.prod.yml up",
-    "docker:down": "docker compose -f docker-compose.prod.yml down"
+    "start": "prisma migrate deploy && node dist/server.js",
+    "dev": "ts-node src/server.ts"
   },
   "keywords": [],
   "author": "",
