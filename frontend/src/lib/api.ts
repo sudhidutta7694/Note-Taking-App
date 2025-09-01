@@ -160,6 +160,6 @@ class ApiService {
 }
 
 // ✅ Create and export API instance
-const api = new ApiService('https://note-taking-app-f5ef.onrender.com');
+const api = new ApiService('https://note-taking-app-backend-yd9n.onrender.com');
 
 export default api;
