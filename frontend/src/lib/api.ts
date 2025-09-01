@@ -160,6 +160,6 @@ class ApiService {
 }
 
 // ✅ Create and export API instance
-const api = new ApiService(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000');
+const api = new ApiService('https://note-taking-app-f5ef.onrender.com');
 
 export default api;
